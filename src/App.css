@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer:wght@900&family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 21cm;
+    height: 29.7cm; 
+}
+
+@font-face {
+    font-family: khbattambong;
+    src: url(font/KhmerOSbattambang.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: khmoul;
+    src: url(font/KhmerOSmuollight.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: khmoul;
+    src: url(font/KhmerOSmuol.ttf);
+    font-weight: bold;
+}
+.border-none {
+    border: none !important;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+.mb-0px {
+    margin-bottom: 0;
+}
+.mt-2rem {
+    margin-top: 2rem;
+}
+.m-left-30px {
+    margin-left: 30px;
+}
+.m-right-20px {
+    margin-right: 20px;
+}
+.text-right {
+    text-align: right;
+}
+.d-grid {
+    line-height: 18px;
+}
+.header-personal {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.photo .border-box {
+    border: 2px solid #000;
+    width: 160px;
+    height: 197px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-personal .title {
+    font-weight: bold;
+    font-family: khmoul;
+    font-size: 1.5rem;
+}
+.header-personal .title-en {
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+.title-header {
+    margin-top: 20px;
+}
+.table-personal .table1 {
+    width: 100%;
+    font-size: 10px;
+}
+.table-personal table thead tr th,
+.table-personal table tbody tr td {
+    border: 1px solid #000;
+    color: #000;
+    font-weight: 600;
+    font-family: khbattambong;
+}
+.table-personal table tbody tr td {
+    padding: 12px 5px;
+}
+.table-personal .second-header {
+    text-align: center;
+}
+.table-personal .second-header th {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    background: orange;
+    font-family: 'Noto Serif Khmer', serif;
+}
+.table-personal tfoot tr td {
+    padding: 12px 0;
+    color: #000;
+    font-weight: 600;
+    font-family: khbattambong;
+}
+.third-header
+{
+    font-weight: 600;
+    background: orange;
+    font-size: 1rem;
+    font-family: 'Noto Serif Khmer', serif;
+    text-align: center;
+}
+.table-personal .first-header {
+    border: 1px solid #000;
+}
+.table-personal .second-header {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.table-personal .first-header th .theader-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.table-personal .first-header th .theader-text span:nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    border-left: 1px solid #000;
+}
+.table-personal .first-header th .theader-text span {
+    padding: 12px;
+}
+.no-num {
+    background: #dfdfdf;
+}
+.table-personal .text-header {
+    display: flex;
+    justify-content: space-between;
+}
+.table-personal .no-num {
+    text-align: center;
+    width: 4%;
+}
+.text-grid h5 {
+    font-size: 10px;
+    font-family: khbattambong;
+    font-weight: 600;
+}
+.table-personal table tbody tr:nth-child(3) .row-form {
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.table-personal table tbody tr:nth-child(3) .row-form span {
+    color: #000;
+    font-weight: 600;
+    margin-right: 12px;
+    margin-left: 0 !important;
+}
+.checkbox input {
+    height: 27px;
+    width: 30px;
+    margin-bottom: 2px;
+}
+.table-personal table tbody tr:nth-child(3) .row-form .checkbox div {
+    display: flex;
+    align-items: center;
+}
+.checkbox label {
+    font-weight: 600;
+    margin-left: 5px;
+}
+.date-of-birth .checkbox {
+    display: flex;
+}
+.date-of-birth .checkbox div {
+    display: grid;
+}
+.date-of-birth .checkbox div .title {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+.date-of-birth .checkbox div .date-input {
+    display: flex;
+}
+.date-input .box {
+    border: 1px solid #000;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+.date-of-birth .checkbox div .input-number {
+    display: flex;
+}
+.date-of-birth .checkbox .slash {
+    margin: 0 5px;
+    font-size: 18px;
+    margin-left: 0;
+}
+.date-of-birth .header-date {
+    margin-left: 0 !important;
+}
+.text-of-body .text {
+    display: flex;
+    justify-content: space-between;
+}
+.text-of-body .text div:nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+.text-address.d-flex div {
+    display: grid;
+    text-align: left;
+}
+.text-address.d-flex div:not(:last-child) {
+    margin-right: 20px;
+}
+.text-address .d-grid div span {
+    margin-left: 0 !important;
+}
+.blog-text {
+    display: flex;
+    justify-content: space-between;
+}
+.blog-text .d-grid:nth-child(5),
+.blog-text .d-grid:nth-child(4),
+.blog-text .d-flex:nth-child(5)
+ {
+    width: 100px;
+}
+.table2 {
+    width: 100%;
+}
+.table2 tbody tr td:nth-child(1) {
+    border: none !important;
+}
+.table2 tbody tr td:nth-child(2) {
+    border-bottom: none;
+    border-top: none;
+}
+.table2 tbody tr td:nth-child(3) {
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+}
+.width-50 {
+    width: 50%;
+}
+.blog-date {
+    display: flex;
+}
+.blog-date .first,
+.blog-date .second {
+    display: flex;
+}
+.blog-date .first .title,
+.blog-date .second .title{
+    display: grid;
+    margin-right: 10px;
+}
+.blog-date .second {
+    margin-left: 12px;
+}
+.note-fotter {
+    margin-left: 1rem;
+}
+.note-fotter li {
+    list-style-type: square;
+}
+.note-fotter li p {
+    margin: 0;
+}
+.fotter .title {
+    font-size: 14px;
+    font-weight: 600;
+}
+.signature .header-title {
+    text-align: center;
+}
+.signature .header-title h2,
+.signature .name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000;
+    font-family: khmoul;
+    text-align: center;
+}
+.signature {
+    justify-content: center;
+    display: grid;
+    align-content: space-between;
+}
+.signature .header-title .en {
+    font-weight: 700;
+    font-family: 'Noto Serif Khmer';
+}
+table {
+    break-inside: auto;
+}
+tr {
+    break-inside: avoid;
+    break-after: auto;
+}
+thead {
+    display: table-header-group;
+}
+tfoot {
+    display: table-footer-group;
+}
+
+
+
+@media print {
+  
+    @page {
+        margin: 15px;
+        counter-increment: page;
+        @bottom-right {
+            padding-right:20px;
+            content: "Page " counter(page);
+        }
+    }
+    .py-5 {
+        padding: 0 !important;
+    }
+}
