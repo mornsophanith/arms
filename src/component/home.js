@@ -7,7 +7,8 @@ import {
     Button
 } from "antd";
 import DoughnutChart from "./doughnutChart";
-import { NavLink } from "react-router-dom";
+import { faChartArea, faArrowDown} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../assets/style/home.css';
 
 export default function Home() {
@@ -52,10 +53,8 @@ export default function Home() {
     const columnsDetail = [
         {
             title:     (
-                <span>
-                    Category <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                        <path d="M5.66667 1.33325V10.6666M5.66667 10.6666L10.3333 5.99992M5.66667 10.6666L1 5.99992" stroke="#667085" stroke-width="1.33333"/>
-                    </svg> 
+                <span> 
+                    Category <FontAwesomeIcon icon={faArrowDown} />
                 </span>
             ),
             dataIndex: 'category',
@@ -64,9 +63,7 @@ export default function Home() {
         {
             title:     (
                 <span>
-                    Information <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                        <path d="M5.66667 1.33325V10.6666M5.66667 10.6666L10.3333 5.99992M5.66667 10.6666L1 5.99992" stroke="#667085" stroke-width="1.33333"/>
-                    </svg> 
+                    Information <FontAwesomeIcon icon={faArrowDown} />
                 </span>
             ),
             dataIndex: 'information',
@@ -75,9 +72,7 @@ export default function Home() {
         {
             title:     (
               <span>
-                    Remarks <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                      <path d="M5.66667 1.33325V10.6666M5.66667 10.6666L10.3333 5.99992M5.66667 10.6666L1 5.99992" stroke="#667085" stroke-width="1.33333"/>
-                    </svg> 
+                    Remarks <FontAwesomeIcon icon={faArrowDown} />
               </span>
             ),
             dataIndex: 'remarks',
@@ -86,9 +81,7 @@ export default function Home() {
         {
             title:     (
               <span>
-                  Focal Point <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                      <path d="M5.66667 1.33325V10.6666M5.66667 10.6666L10.3333 5.99992M5.66667 10.6666L1 5.99992" stroke="#667085" stroke-width="1.33333"/>
-                  </svg> 
+                  Focal Point <FontAwesomeIcon icon={faArrowDown} />
               </span>
             ),
             dataIndex: 'focal_point',
@@ -97,9 +90,7 @@ export default function Home() {
           {
             title:     (
                 <span>
-                    Cost (USD) <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                        <path d="M5.66667 1.33325V10.6666M5.66667 10.6666L10.3333 5.99992M5.66667 10.6666L1 5.99992" stroke="#667085" stroke-width="1.33333"/>
-                    </svg> 
+                    Cost (USD) <FontAwesomeIcon icon={faArrowDown} />
                 </span>
             ),
             dataIndex: 'cost_usd',
@@ -108,9 +99,7 @@ export default function Home() {
           {
             title:     (
                 <span>
-                    Due Date <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                        <path d="M5.66667 1.33325V10.6666M5.66667 10.6666L10.3333 5.99992M5.66667 10.6666L1 5.99992" stroke="#667085" stroke-width="1.33333"/>
-                    </svg> 
+                    Due Date <FontAwesomeIcon icon={faArrowDown} />
                 </span>
             ),
             dataIndex: 'due_date',
@@ -119,59 +108,57 @@ export default function Home() {
           {
             title:     (
                 <span>
-                    Status <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                        <path d="M5.66667 1.33325V10.6666M5.66667 10.6666L10.3333 5.99992M5.66667 10.6666L1 5.99992" stroke="#667085" stroke-width="1.33333"/>
-                    </svg> 
+                    Status <FontAwesomeIcon icon={faArrowDown} />
                 </span>
             ),
             dataIndex: 'status',
             key: 'status',
           },
-      ];
+    ];
     
-      const dataDetail = [
-        {
-          key: '1',
-          category: 'RSK_GA_3_10',
-          informatin: "-",
-          remarks: '-',
-          focal_point: '-',
-          cost_usd: '0.00',
-          due_date: '12/01/2023',
-          status: '-',
+    const dataDetail = [
+    {
+        key: '1',
+        category: 'RSK_GA_3_10',
+        informatin: "-",
+        remarks: '-',
+        focal_point: '-',
+        cost_usd: '0.00',
+        due_date: '12/01/2023',
+        status: '-',
+    },
+    {
+        key: '2',
+        category: 'RSK_GA_3_10',
+        informatin: "-",
+        remarks: '-',
+        focal_point: '-',
+        cost_usd: '0.00',
+        due_date: '12/01/2023',
+        status: '-',
         },
         {
-            key: '2',
-            category: 'RSK_GA_3_10',
-            informatin: "-",
-            remarks: '-',
-            focal_point: '-',
-            cost_usd: '0.00',
-            due_date: '12/01/2023',
-            status: '-',
-          },
-          {
-            key: '3',
-            category: 'RSK_GA_3_10',
-            informatin: "-",
-            remarks: '-',
-            focal_point: '-',
-            cost_usd: '0.00',
-            due_date: '12/01/2023',
-            status: '-',
-          },
-          {
-            key: '4',
-            category: 'RSK_GA_3_10',
-            informatin: "-",
-            remarks: '-',
-            focal_point: '-',
-            cost_usd: '0.00',
-            due_date: '12/01/2023',
-            status: '-',
-          },
-        
-        ];
+        key: '3',
+        category: 'RSK_GA_3_10',
+        informatin: "-",
+        remarks: '-',
+        focal_point: '-',
+        cost_usd: '0.00',
+        due_date: '12/01/2023',
+        status: '-',
+        },
+        {
+        key: '4',
+        category: 'RSK_GA_3_10',
+        informatin: "-",
+        remarks: '-',
+        focal_point: '-',
+        cost_usd: '0.00',
+        due_date: '12/01/2023',
+        status: '-',
+        },
+    
+    ];
 
     return (<div className="main-home">
         <section className="risk-treatment-status">
@@ -200,10 +187,9 @@ export default function Home() {
                 <Row gutter={[16, 16]}>
                     <Col className="gutter-row" xs={12} sm={4} md={4} lg={4} xl={4} xxl={4} span={6}>
                         <div className="cart-content">
-                            <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                                <rect width="50" height="50" rx="25" fill="#54E69D"/>
-                                <path d="M15.625 15.3125C15.625 14.4482 14.9268 13.75 14.0625 13.75C13.1982 13.75 12.5 14.4482 12.5 15.3125V31.7188C12.5 33.877 14.248 35.625 16.4062 35.625H35.9375C36.8018 35.625 37.5 34.9268 37.5 34.0625C37.5 33.1982 36.8018 32.5 35.9375 32.5H16.4062C15.9766 32.5 15.625 32.1484 15.625 31.7188V15.3125ZM20.3125 29.375H34.375C35.2393 29.375 35.9375 28.6768 35.9375 27.8125V24.4824C35.9375 24.1113 35.8057 23.75 35.5615 23.4668L32.3486 19.7168C31.7578 19.0234 30.7031 18.9844 30.0586 19.6289L29.0332 20.6543C28.5449 21.1426 27.7441 21.1035 27.3047 20.5762L25.3906 18.2812C24.7754 17.5439 23.6475 17.5293 23.0127 18.252L19.1357 22.6855C18.8867 22.9688 18.75 23.335 18.75 23.7158V27.8174C18.75 28.6816 19.4482 29.3799 20.3125 29.3799V29.375Z" fill="white"/>
-                            </svg>
+                            <div className='icon chart1'>
+                                <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
+                            </div>
                             <div className="text-cart">
                                 <span className="text1">Done</span>
                                 <span className="text2">150</span>
@@ -213,10 +199,9 @@ export default function Home() {
 
                     <Col className="gutter-row" xs={12} sm={4} md={4} lg={4} xl={4} xxl={4} span={6}>
                         <div className="cart-content">
-                            <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                                <rect width="50" height="50" rx="25" fill="#DDDFEB"/>
-                                <path d="M15.625 15.3125C15.625 14.4482 14.9268 13.75 14.0625 13.75C13.1982 13.75 12.5 14.4482 12.5 15.3125V31.7188C12.5 33.877 14.248 35.625 16.4062 35.625H35.9375C36.8018 35.625 37.5 34.9268 37.5 34.0625C37.5 33.1982 36.8018 32.5 35.9375 32.5H16.4062C15.9766 32.5 15.625 32.1484 15.625 31.7188V15.3125ZM20.3125 29.375H34.375C35.2393 29.375 35.9375 28.6768 35.9375 27.8125V24.4824C35.9375 24.1113 35.8057 23.75 35.5615 23.4668L32.3486 19.7168C31.7578 19.0234 30.7031 18.9844 30.0586 19.6289L29.0332 20.6543C28.5449 21.1426 27.7441 21.1035 27.3047 20.5762L25.3906 18.2812C24.7754 17.5439 23.6475 17.5293 23.0127 18.252L19.1357 22.6855C18.8867 22.9688 18.75 23.335 18.75 23.7158V27.8174C18.75 28.6816 19.4482 29.3799 20.3125 29.3799V29.375Z" fill="white"/>
-                            </svg>
+                            <div className='icon chart2'>
+                                <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
+                            </div>
                             <div className="text-cart">
                                 <span className="text1">Cancelled</span>
                                 <span className="text2">150</span>
@@ -226,10 +211,9 @@ export default function Home() {
                     
                     <Col className="gutter-row" xs={12} sm={4} md={4} lg={4} xl={4} xxl={4} span={6}>
                         <div className="cart-content">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                                <rect width="50" height="50" rx="25" fill="#85B4F2"/>
-                                <path d="M15.625 15.3125C15.625 14.4482 14.9268 13.75 14.0625 13.75C13.1982 13.75 12.5 14.4482 12.5 15.3125V31.7188C12.5 33.877 14.248 35.625 16.4062 35.625H35.9375C36.8018 35.625 37.5 34.9268 37.5 34.0625C37.5 33.1982 36.8018 32.5 35.9375 32.5H16.4062C15.9766 32.5 15.625 32.1484 15.625 31.7188V15.3125ZM20.3125 29.375H34.375C35.2393 29.375 35.9375 28.6768 35.9375 27.8125V24.4824C35.9375 24.1113 35.8057 23.75 35.5615 23.4668L32.3486 19.7168C31.7578 19.0234 30.7031 18.9844 30.0586 19.6289L29.0332 20.6543C28.5449 21.1426 27.7441 21.1035 27.3047 20.5762L25.3906 18.2812C24.7754 17.5439 23.6475 17.5293 23.0127 18.252L19.1357 22.6855C18.8867 22.9688 18.75 23.335 18.75 23.7158V27.8174C18.75 28.6816 19.4482 29.3799 20.3125 29.3799V29.375Z" fill="white"/>
-                            </svg>
+                            <div className='icon chart3'>
+                                <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
+                            </div>
                             <div className="text-cart">
                                 <span className="text1">Not Started</span>
                                 <span className="text2">150</span>
@@ -239,10 +223,9 @@ export default function Home() {
 
                     <Col className="gutter-row" xs={12} sm={4} md={4} lg={4} xl={4} xxl={4} span={6}>
                         <div className="cart-content">
-                            <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                                <rect width="50" height="50" rx="25" fill="#EEF157"/>
-                                <path d="M15.625 15.3125C15.625 14.4482 14.9268 13.75 14.0625 13.75C13.1982 13.75 12.5 14.4482 12.5 15.3125V31.7188C12.5 33.877 14.248 35.625 16.4062 35.625H35.9375C36.8018 35.625 37.5 34.9268 37.5 34.0625C37.5 33.1982 36.8018 32.5 35.9375 32.5H16.4062C15.9766 32.5 15.625 32.1484 15.625 31.7188V15.3125ZM20.3125 29.375H34.375C35.2393 29.375 35.9375 28.6768 35.9375 27.8125V24.4824C35.9375 24.1113 35.8057 23.75 35.5615 23.4668L32.3486 19.7168C31.7578 19.0234 30.7031 18.9844 30.0586 19.6289L29.0332 20.6543C28.5449 21.1426 27.7441 21.1035 27.3047 20.5762L25.3906 18.2812C24.7754 17.5439 23.6475 17.5293 23.0127 18.252L19.1357 22.6855C18.8867 22.9688 18.75 23.335 18.75 23.7158V27.8174C18.75 28.6816 19.4482 29.3799 20.3125 29.3799V29.375Z" fill="white"/>
-                            </svg>
+                            <div className='icon chart4'>
+                                <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
+                            </div>
                             <div className="text-cart">
                                 <span className="text1">In Progress</span>
                                 <span className="text2">560</span>
@@ -252,10 +235,9 @@ export default function Home() {
 
                     <Col className="gutter-row" xs={12} sm={4} md={4} lg={4} xl={4} xxl={4}>
                         <div className="cart-content">
-                            <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                                <rect width="50" height="50" rx="25" fill="#FFC36D"/>
-                                <path d="M15.625 15.3125C15.625 14.4482 14.9268 13.75 14.0625 13.75C13.1982 13.75 12.5 14.4482 12.5 15.3125V31.7188C12.5 33.877 14.248 35.625 16.4062 35.625H35.9375C36.8018 35.625 37.5 34.9268 37.5 34.0625C37.5 33.1982 36.8018 32.5 35.9375 32.5H16.4062C15.9766 32.5 15.625 32.1484 15.625 31.7188V15.3125ZM20.3125 29.375H34.375C35.2393 29.375 35.9375 28.6768 35.9375 27.8125V24.4824C35.9375 24.1113 35.8057 23.75 35.5615 23.4668L32.3486 19.7168C31.7578 19.0234 30.7031 18.9844 30.0586 19.6289L29.0332 20.6543C28.5449 21.1426 27.7441 21.1035 27.3047 20.5762L25.3906 18.2812C24.7754 17.5439 23.6475 17.5293 23.0127 18.252L19.1357 22.6855C18.8867 22.9688 18.75 23.335 18.75 23.7158V27.8174C18.75 28.6816 19.4482 29.3799 20.3125 29.3799V29.375Z" fill="white"/>
-                            </svg>
+                            <div className='icon chart5'>
+                                <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
+                            </div>
                             <div className="text-cart">
                                 <span className="text1">Near Due Date</span>
                                 <span className="text2">150</span>
@@ -265,10 +247,9 @@ export default function Home() {
 
                     <Col className="gutter-row" xs={12} sm={4} md={4} lg={4} xl={4} xxl={4}>
                         <div className="cart-content">
-                            <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                                <rect width="50" height="50" rx="25" fill="#FF7676"/>
-                                <path d="M15.625 15.3125C15.625 14.4482 14.9268 13.75 14.0625 13.75C13.1982 13.75 12.5 14.4482 12.5 15.3125V31.7188C12.5 33.877 14.248 35.625 16.4062 35.625H35.9375C36.8018 35.625 37.5 34.9268 37.5 34.0625C37.5 33.1982 36.8018 32.5 35.9375 32.5H16.4062C15.9766 32.5 15.625 32.1484 15.625 31.7188V15.3125ZM20.3125 29.375H34.375C35.2393 29.375 35.9375 28.6768 35.9375 27.8125V24.4824C35.9375 24.1113 35.8057 23.75 35.5615 23.4668L32.3486 19.7168C31.7578 19.0234 30.7031 18.9844 30.0586 19.6289L29.0332 20.6543C28.5449 21.1426 27.7441 21.1035 27.3047 20.5762L25.3906 18.2812C24.7754 17.5439 23.6475 17.5293 23.0127 18.252L19.1357 22.6855C18.8867 22.9688 18.75 23.335 18.75 23.7158V27.8174C18.75 28.6816 19.4482 29.3799 20.3125 29.3799V29.375Z" fill="white"/>
-                            </svg>
+                            <div className='icon chart6'>
+                                <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
+                            </div>
                             <div className="text-cart">
                                 <span className="text1">Overdue</span>
                                 <span className="text2">150</span>
