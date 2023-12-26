@@ -5,7 +5,7 @@ import {
     Table,
     Button
 } from 'antd';
-import { faChartArea } from '@fortawesome/free-solid-svg-icons';
+import { faChartArea,faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../assets/style/risk_matrix.css';
 
@@ -112,11 +112,13 @@ const RiskMatrix = () => {
             title: 'Event',
             dataIndex: 'event',
             key: 'event',
+            width: '22%'
         },
         {
             title: 'Department',
             dataIndex: 'department',
             key: 'department',
+            width: '22%'
         },
         {
             title: 'Directorate',
@@ -144,42 +146,62 @@ const RiskMatrix = () => {
         {
             key: '1',
             risk_id: 'RSK_GA_3_10',
-            event: "-",
-            department: '-',
-            directorate: '-',
-            division: '0.00',
-            inherent_risk_score: '12/01/2023',
-            residual_risk_score: '-',
+            event: "Divergence in interest, objectives, vision and national interest/national laws and regulation among AMS leads to difficulties in",
+            department: 'ASEAN Economic Community Department (AEC Department)',
+            directorate: 'Market Integration Directorate',
+            division: 'External Economic Relations Division',
+            inherent_risk_score: 'Significant',
+            residual_risk_score: 'Significant',
         },
         {
             key: '2',
             risk_id: 'RSK_GA_3_10',
-            event: "-",
-            department: '-',
-            directorate: '-',
-            division: '0.00',
-            inherent_risk_score: '12/01/2023',
-            residual_risk_score: '-',
+            event: "Divergence in interest, objectives, vision and national interest/national laws and regulation among AMS leads to difficulties in",
+            department: 'ASEAN Economic Community Department (AEC Department)',
+            directorate: 'Market Integration Directorate',
+            division: 'External Economic Relations Division',
+            inherent_risk_score: 'Significant',
+            residual_risk_score: 'Significant',
         },
         {
             key: '3',
             risk_id: 'RSK_GA_3_10',
-            event: "-",
-            department: '-',
-            directorate: '-',
-            division: '0.00',
-            inherent_risk_score: '12/01/2023',
-            residual_risk_score: '-',
+            event: "Divergence in interest, objectives, vision and national interest/national laws and regulation among AMS leads to difficulties in",
+            department: 'ASEAN Economic Community Department (AEC Department)',
+            directorate: 'Market Integration Directorate',
+            division: 'External Economic Relations Division',
+            inherent_risk_score: 'Significant',
+            residual_risk_score: 'Significant',
         },
         {
             key: '4',
             risk_id: 'RSK_GA_3_10',
-            event: "-",
-            department: '-',
-            directorate: '-',
-            division: '0.00',
-            inherent_risk_score: '12/01/2023',
-            residual_risk_score: '-',
+            event: "Divergence in interest, objectives, vision and national interest/national laws and regulation among AMS leads to difficulties in",
+            department: 'ASEAN Economic Community Department (AEC Department)',
+            directorate: 'Market Integration Directorate',
+            division: 'External Economic Relations Division',
+            inherent_risk_score: 'Significant',
+            residual_risk_score: 'Significant',
+        },
+        {
+            key: '5',
+            risk_id: 'RSK_GA_3_10',
+            event: "Divergence in interest, objectives, vision and national interest/national laws and regulation among AMS leads to difficulties in",
+            department: 'ASEAN Economic Community Department (AEC Department)',
+            directorate: 'Market Integration Directorate',
+            division: 'External Economic Relations Division',
+            inherent_risk_score: 'Significant',
+            residual_risk_score: 'Significant',
+        },
+        {
+            key: '6',
+            risk_id: 'RSK_GA_3_10',
+            event: "Divergence in interest, objectives, vision and national interest/national laws and regulation among AMS leads to difficulties in",
+            department: 'ASEAN Economic Community Department (AEC Department)',
+            directorate: 'Market Integration Directorate',
+            division: 'External Economic Relations Division',
+            inherent_risk_score: 'Significant',
+            residual_risk_score: 'Significant',
         },
     
     ];
@@ -192,8 +214,8 @@ const RiskMatrix = () => {
                 </div>
 
                 <div className='box-content'>
-                    <Row gutter={16}>
-                        <Col span={12}>
+                    <Row gutter={[16,16]}>
+                        <Col span={12} sm={12} xs={24}>
                             <div className='box'>
                                 <div className='icon chart1'>
                                     <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
@@ -204,7 +226,7 @@ const RiskMatrix = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col className="gutter-row" span={12}>
+                        <Col className="gutter-row" span={12} sm={12} xs={24}>
                             <div className='box'>
                                 <div className='icon chart2'>
                                     <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
@@ -300,10 +322,9 @@ const RiskMatrix = () => {
                                 },
                                 ]}
                             />
-                            <Button>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M5 10H15M2.5 5H17.5M7.5 15H12.5" stroke="#344054" stroke-width="1.67"/>
-                                </svg>More Filters
+                            <Button className='btn-filter'>
+                                <FontAwesomeIcon className='icon-bars-filter' icon={faBars} />
+                                More Filters
                             </Button>
                         </div>
                     </div>

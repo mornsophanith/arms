@@ -7,7 +7,11 @@ import {
     Button
 } from "antd";
 import DoughnutChart from "./doughnutChart";
-import { faChartArea, faArrowDown} from '@fortawesome/free-solid-svg-icons';
+import { 
+    faChartArea, 
+    faArrowDown, 
+    faBars
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../assets/style/home.css';
 
@@ -185,7 +189,7 @@ export default function Home() {
             </div>
             <div className="box">
                 <Row gutter={[16, 16]}>
-                    <Col className="gutter-row" xs={12} sm={4} md={4} lg={4} xl={4} xxl={4} span={6}>
+                    <Col className="gutter-row" xs={12} sm={12} md={8} lg={4} xl={4} xxl={4} span={6}>
                         <div className="cart-content">
                             <div className='icon chart1'>
                                 <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
@@ -197,7 +201,7 @@ export default function Home() {
                         </div>
                     </Col>
 
-                    <Col className="gutter-row" xs={12} sm={4} md={4} lg={4} xl={4} xxl={4} span={6}>
+                    <Col className="gutter-row" xs={12} sm={12} md={8} lg={4} xl={4} xxl={4} span={6}>
                         <div className="cart-content">
                             <div className='icon chart2'>
                                 <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
@@ -209,7 +213,7 @@ export default function Home() {
                         </div>
                     </Col>
                     
-                    <Col className="gutter-row" xs={12} sm={4} md={4} lg={4} xl={4} xxl={4} span={6}>
+                    <Col className="gutter-row" xs={12} sm={12} md={8} lg={4} xl={4} xxl={4} span={6}>
                         <div className="cart-content">
                             <div className='icon chart3'>
                                 <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
@@ -221,7 +225,7 @@ export default function Home() {
                         </div>
                     </Col>
 
-                    <Col className="gutter-row" xs={12} sm={4} md={4} lg={4} xl={4} xxl={4} span={6}>
+                    <Col className="gutter-row" xs={12} sm={12} md={8} lg={4} xl={4} xxl={4} span={6}>
                         <div className="cart-content">
                             <div className='icon chart4'>
                                 <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
@@ -233,7 +237,7 @@ export default function Home() {
                         </div>
                     </Col>
 
-                    <Col className="gutter-row" xs={12} sm={4} md={4} lg={4} xl={4} xxl={4}>
+                    <Col className="gutter-row" xs={12} sm={12} md={8} lg={4} xl={4} xxl={4}>
                         <div className="cart-content">
                             <div className='icon chart5'>
                                 <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
@@ -245,7 +249,7 @@ export default function Home() {
                         </div>
                     </Col>
 
-                    <Col className="gutter-row" xs={12} sm={4} md={4} lg={4} xl={4} xxl={4}>
+                    <Col className="gutter-row" xs={12} sm={12} md={8} lg={4} xl={4} xxl={4}>
                         <div className="cart-content">
                             <div className='icon chart6'>
                                 <FontAwesomeIcon className='icon-chart-area' icon={faChartArea} />
@@ -260,18 +264,8 @@ export default function Home() {
             </div>
         </section>
         <section className="risk-summary">
-            <Row gutter={16}>
-                <Col span={6} push={18}>
-                    <div className="main-risk-treatment-category">
-                        <div className="header">
-                            <h2 className="title">Impact Risk Treatment Category</h2>
-                        </div>
-                        <div className="chat-content">
-                            <DoughnutChart />
-                        </div>
-                    </div>
-                </Col>
-                <Col span={18} pull={6}>
+            <Row gutter={[16,16]}>
+                <Col xs={24} sm={24} md={24} lg={18}>
                     <div className="header">
                         <h2 className="title">Risk Summary</h2>
                     </div>
@@ -300,6 +294,16 @@ export default function Home() {
                                 </div>
                             )}
                         />
+                    </div>
+                </Col>
+                <Col xs={24} sm={24} md={24} lg={6}>
+                    <div className="main-risk-treatment-category">
+                        <div className="header">
+                            <h2 className="title">Impact Risk Treatment Category</h2>
+                        </div>
+                        <div className="chat-content">
+                            <DoughnutChart />
+                        </div>
                     </div>
                 </Col>
             </Row>
@@ -357,10 +361,8 @@ export default function Home() {
                             },
                             ]}
                         />
-                        <Button>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M5 10H15M2.5 5H17.5M7.5 15H12.5" stroke="#344054" stroke-width="1.67"/>
-                            </svg>More Filters
+                        <Button className="btn-bar-filter">
+                            <FontAwesomeIcon className='icon-bars-filter' icon={faBars} />More Filters
                         </Button>
                     </div>
                 </div>

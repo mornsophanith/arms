@@ -1,3 +1,62 @@
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .risk-treatment-detail .main-table-detail .header {
+        display: grid !important;
+    }
+
+    .risk-treatment-detail .main-table-detail .header .btn-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .risk-treatment-detail .main-table-detail .header .btn-right .btn-filter {
+        width: 150px;
+    }
+
+    .risk-treatment-detail .main-table-detail .header .btn-right .ant-select {
+        margin-right: 0 !important;
+        margin-bottom: 20px;
+    }
+}
+  
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .risk-treatment-detail .main-table-detail .header {
+        display: grid !important;
+    }
+
+    .risk-treatment-detail .main-table-detail .header .btn-right .btn-bar-filter {
+        width: 150px;
+    }
+
+    .risk-treatment-detail .main-table-detail .header .btn-right {
+        margin-bottom: 10px !important;
+        display: flex;
+    }
+
+    .risk-treatment-detail .main-table-detail .header .btn-right .icon-bars-filter {
+        margin-right: 10px !important;
+    }
+
+    .risk-treatment-detail .main-table-detail .header .btn-right .icon-bars-filter {
+        margin-bottom: 0 !important;
+    }
+
+    .risk-treatment-detail .main-table-detail .header .btn-right .btn-filter {
+        width: 150px ;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1025px) {
+    .risk-treatment-detail .main-table-detail .header .btn-right {
+        margin-bottom: 10px !important;
+        display: flex;
+    }
+}
+
 .main-home {
     padding: 12px;
     background: #F8F9FC;
@@ -284,4 +343,14 @@
 .risk-treatment-detail .main-table-detail .ant-table-content {
     box-shadow: 0px 10px 13px 0px rgba(17, 38, 146, 0.05);
     border-radius: 8px;
+}
+
+.risk-treatment-detail .main-table-detail .header .btn-bar-filter .icon-bars-filter {
+    margin-right: 10px;
+}
+
+.risk-treatment-detail .main-table-detail .header .btn-bar-filter {
+    display: flex;
+    align-items: center;
+    width: 150px;
 }

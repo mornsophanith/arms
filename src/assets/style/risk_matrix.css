@@ -1,3 +1,35 @@
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .risk-treatment-detail .main-table-detail .header {
+        display: grid !important;
+    }
+
+    .risk-treatment-detail .main-table-detail .header .btn-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .risk-treatment-detail .main-table-detail .header .btn-right .btn-filter {
+        width: 150px;
+    }
+
+    .risk-treatment-detail .main-table-detail .header .btn-right .ant-select{
+        margin-right: 0 !important;
+        margin-bottom: 20px;
+    }
+}
+  
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+}
+
+/* Large screens */
+@media only screen and (min-width: 1025px) {
+
+}
+
 
 .main-matrix .residual-risk-matrix .ant-table-tbody .ant-table-cell:nth-child(2) {
     background: #54e69d; /* columns-color-green */
@@ -144,6 +176,10 @@
 .risk-treatment-detail {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.risk-treatment-detail .main-table-detail .header button .icon-bars-filter {
+    margin-right: 10px;
 }
 
 .risk-treatment-detail .main-table-detail .header .title {
